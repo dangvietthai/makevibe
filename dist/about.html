@@ -20,7 +20,7 @@
 
     <!-- Header -->
 
-    <header class="text-gray-600 body-font bg-white">
+    <header class="sticky text-gray-600 body-font bg-white">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <div class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
                 <div
@@ -53,7 +53,7 @@
                                 d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
                         </svg>
                     </a>
-                    <a href="/dist/login.html"
+                    <a href="login.html"
                         class="items-center hidden pl-6 text-sm font-semibold lg:flex text-neutral-700 dark:text-neutral-800">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="mr-1 bi bi-person" viewBox="0 0 16 16">
@@ -74,7 +74,7 @@
                 <nav class="relative flex items-center justify-between py-4">
                     <a href="" class="text-3xl font-semibold leading-none dark:text-gray-400"></a>
                     <div
-                        class="fixed bg-white w-full justify-end top-0 left-0 p-4 flex items-center lg:hidden lg:mx-auto max-sm:mx-auto z-50">
+                        class="fixed bg-gray-200 w-full justify-start top-0 left-0 p-4 flex items-center lg:hidden lg:mx-auto max-sm:mx-auto z-50">
                         <button
                             class="flex items-center px-3 py-2 text-blue-600 border border-blue-200 rounded dark:text-gray-400 hover:text-blue-800 hover:border-blue-300"
                             @click="open=true">
@@ -84,6 +84,12 @@
                                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                             </svg>
                         </button>
+                        <div class="mx-auto pr-6">
+                            <a href="index.html"
+                                class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center">
+                                <span class="text-2xl z-40 " id="logo">Makevibe.</span>
+                            </a>
+                        </div>
                     </div>
 
                     <ul class="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex ">
@@ -172,33 +178,34 @@
                         </a>
                     </div>
                     <ul class="px-5 text-left mt-7">
-                        <li><a href="index.html"
-                                class="text-sm text-gray-700 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400">Home</a>
+                        <li class="pb-3">
+                            <a href="/dist/index.html" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-100">Home</a>
                         </li>
-                        <li><a href=""
-                                class="text-sm text-gray-700 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400">All
+                        <li class="pb-3">
+                            <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">All
                                 product</a>
                         </li>
-                        <li><a href=""
-                                class="text-sm text-gray-700 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400">Plant
+                        <li class="pb-3">
+                            <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Plant
                                 pots</a>
                         </li>
-                        <li><a href=""
-                                class="text-sm text-gray-700 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400">Ceramics
-                            </a>
+                        <li class="pb-3">
+                            <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Ceramics</a>
                         </li>
-                        <li><a href=""
-                                class="text-sm text-gray-700 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400">Tables</a>
+                        <li class="pb-3">
+                            <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">
+                                Tables</a>
                         </li>
-                        <li><a href=""
-                                class="text-sm text-gray-700 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400">Chairs
-                            </a>
+                        <li class="pb-3">
+                            <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Chairs</a>
                         </li>
-                        <li><a href=""
-                                class="text-sm text-gray-700 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400">Tableware</a>
+                        <li class="pb-3">
+                            <a href=""
+                                class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Tableware</a>
                         </li>
-                        <li><a href="about.html"
-                                class="text-sm text-gray-700 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400">About</a>
+                        <li class="pb-3">
+                            <a href="about.html"
+                                class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Ablout</a>
                         </li>
                     </ul>
 
